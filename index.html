@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hindi Vibe - Best Hindi Songs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="brand"><img src="logo.png" alt="VIBE-music" class="logo"> VIBE-music</li>
+      <li>Home</li>
+      <li>Popular</li>
+      <li>Latest</li>
+      <li><h1>NIRMAL SINGH</h1></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <div class="songList">
+      <div class="topBanner">
+        <div>
+          <h1>Hindi Songs Collection</h1>
+          <p>Fast beats, soulful voice, and emotional Hindi songs.</p>
+        </div>
+        <button id="shuffleBtn"><i class="fa-solid fa-shuffle"></i> Shuffle</button>
+      </div>
+
+      <div class="songItemContainer">
+        <div class="songItem"><div><span class="songName">1. Tera Ban Jaun</span><br/><small>Aalam Latif</small></div><span class="songlistplay"><i id="0" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">2. Dil Nache</span><br/><small>Aditya Raj</small></div><span class="songlistplay"><i id="1" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">3. Chand Taron Mein</span><br/><small>Sneha Singh</small></div><span class="songlistplay"><i id="2" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">4. Phir Bhi Tum</span><br/><small>Ankit Ranjan</small></div><span class="songlistplay"><i id="3" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">5. Yaadein Purani</span><br/><small>Shruti Verma</small></div><span class="songlistplay"><i id="4" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">6. Tere Bina</span><br/><small>Rahul Kumar</small></div><span class="songlistplay"><i id="5" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">7. Suno Aawaz</span><br/><small>Sia</small></div><span class="songlistplay"><i id="6" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">8. Raat Ki Sair</span><br/><small>Aakash Sharma</small></div><span class="songlistplay"><i id="7" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">9. Dil Ki Dastaan</span><br/><small>Neelam</small></div><span class="songlistplay"><i id="8" class="far songItemPlay fa-play-circle"></i></span></div>
+        <div class="songItem"><div><span class="songName">10. Mit Jaate Hain Faasle</span><br/><small>Vivek</small></div><span class="songlistplay"><i id="9" class="far songItemPlay fa-play-circle"></i></span></div>
+      </div>
+    </div>
+    
+    <div class="songBanner">
+      <div class="coverBlock">
+        <h2>Now Playing</h2>
+        <p id="masterSongName">Tera Ban Jaun</p>
+        <img id="coverImg" src="covers/1.jpg" alt="cover" class="coverImg" />
+        <img id="gif" src="playing.gif" alt="playing" class="playingGif" />
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <input type="range" id="myProgressBar" min="0" max="100" value="0" />
+    <div class="icons">
+      <i class="fas fa-2x fa-step-backward" id="previous"></i>
+      <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+      <i class="fas fa-2x fa-step-forward" id="next"></i>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
