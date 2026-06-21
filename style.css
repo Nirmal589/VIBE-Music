@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Ubuntu',sans-serif;
+    background: radial-gradient(circle at top right, #111827 0%, #0b1220 45%, #04050a 100%);
+    color:#f8fafc;
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    background:rgba(5, 129, 231, 0.967);
+    padding:10px 16px;
+    gap:12px;
+}
+
+nav ul li{
+    color:#000f03;
+    font-size:.95rem;
+    letter-spacing:.2px;
+}
+
+.brand{
+    font-weight:800;
+    font-size:1.2rem;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.logo{
+    width:38px;
+    height:38px;
+    object-fit:contain;
+    filter: brightness(1.4); 
+    border: 2px solid #f9fafb; 
+    border-radius: 8px; 
+    padding:2px;
+}
+
+.container{
+    width:min(96%,980px);
+    margin:18px auto;
+    background:rgba(3, 240, 236, 0.94);
+    border-radius:16px;
+    border:1px solid #334155;
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    padding:16px;
+}
+
+.songList{
+    flex:2;
+}
+
+.topBanner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+    margin-bottom:12px;
+}
+
+.topBanner h1{
+    font-size:1.8rem;
+    margin-bottom:4px;
+}
+
+.topBanner p{
+    color:#f9fafaec;
+}
+
+#shuffleBtn{
+    border:none;
+    background:linear-gradient(120deg,#4e46e52c,#021093);
+    color:#fefffefb;
+    padding:.55rem 1rem;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.songItemContainer{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    max-height:490px;
+    overflow-y:auto;
+    border:1px solid #0c0c0c66;
+    border-radius:12px;
+    background-image: url("bg.jpg"); 
+    background-size: cover;
+}
+
+.songItem{
+    background:#f8fbf905;
+    border:1px solid #f7f9fa2c;
+    border-radius:1px;
+    color:#f7f5f5fe;
+    padding:.6rem 1rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    transition:.15s;
+}
+
+.songItem:hover{
+    transform:translateY(-2px);
+    background:#dcdde04b;
+}
+
+.songName{
+    font-weight:700;
+    font-size:1rem;
+}
+
+.songItem small{
+    color:#090909;
+    font-size:.75rem;
+}
+
+.songlistplay i{
+    color:#00070e;
+    font-size:1.25rem;
+    cursor:pointer;
+}
+
+.songBanner{
+    flex:1;
+    min-width:220px;
+    background:linear-gradient(180deg,#e904f1,#0731eb);
+    padding:16px;
+    border-radius:14px;
+    border:1px solid #e9094c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.coverBlock{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:12px;
+}
+
+.coverImg{
+    width:200px;
+    height:180px;
+    object-fit:cover;
+    border-radius:14px;
+    border:1px solid #334155;
+}
+
+.playingGif{
+    width:200px;
+    filter:drop-shadow(0 0 5px #018efa);
+    border-radius: 12px;
+}
+
+.bottom{
+    position:sticky;
+    bottom:0;
+    background:#0554f1ea;
+    border-top:1px solid #0e0e0e;
+    color:#fff;
+    padding:10px 16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+#myProgressBar{
+    width:100%;
+    max-width:860px;
+    accent-color:#22c55e;
+}
+
+.icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:26px;
+}
+
+.icons i{
+    cursor:pointer;
+    color:#0f0110;
+}
+
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+    .songBanner{
+        min-height:170px;
+    }
+}
