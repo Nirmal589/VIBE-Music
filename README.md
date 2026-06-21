@@ -1,5 +1,7 @@
 # VIBE-Music
-[🚀 Live Demo Link] (https://vibe-music-ns.netlify.app/)
+[🚀 Live Demo Upgrade Link] (https://vibe-music-ns.netlify.app/)
+[🚀 Live Demo Previous Link] (https://vibe-music1.netlify.app/)
+
 This is my first repository. A web-based music player application to play your favorite Hindi songs.
 
 ## Author
